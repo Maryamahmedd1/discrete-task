@@ -1,0 +1,36 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace HelloWold
+{
+    public static class Program 
+    {         
+        public static void Main()
+        {   
+        //discrete task
+          //project #4
+          
+      Console.WriteLine("Enter the first number: ");
+        int firstnum=int.Parse(Console.ReadLine());
+        Console.WriteLine("Enter the secound number: ");
+        int secoundnum=int.Parse(Console.ReadLine());
+         int i;
+       for( i=Math.Min(firstnum,secoundnum);i<=Math.Max(firstnum,secoundnum);i++)
+         { 
+         	int sum=0;
+         	for(int j=1;j<i;j++)
+         	{
+         		if(i%j==0)
+         		{
+                  sum+=j;
+         		}
+         	}
+         	if(sum==i)
+         	{
+         		Console.WriteLine(i);
+         	}
+         }    
+       }
+    }
+}
