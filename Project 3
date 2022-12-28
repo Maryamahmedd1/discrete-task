@@ -18,20 +18,19 @@ namespace HelloWold
          int i;
        for( i=Math.Min(firstnum,secoundnum);i<=Math.Max(firstnum,secoundnum);i++)
        {
-       	int notprime=0;
+       	int isprime=0;
        	for(int j=2;j<i;j++)
        	{
        		if(i%j==0)
        		{
-       			notprime++;
+            isprime++;
        		}
-       		if(notprime==2) break;
+       		if(isprime==2) break;
        		
        	}
-       	if(notprime !=2)
+       	if(isprime !=2)
        	Console.WriteLine(i);
-       	
-       	notprime=0;
+        isprime=0;
        }            
          		
          	
