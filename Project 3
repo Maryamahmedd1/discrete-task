@@ -19,7 +19,7 @@ namespace HelloWold
        for( i=Math.Min(firstnum,secoundnum);i<=Math.Max(firstnum,secoundnum);i++)
        {
        	int notprime=0;
-       	for(int j;j<i;j++)
+       	for(int j=2;j<i;j++)
        	{
        		if(i%j==0)
        		{
@@ -32,39 +32,9 @@ namespace HelloWold
        	Console.WriteLine(i);
        	
        	notprime=0;
-       }  
-
-
-         
-        
-         
-         
-         
-              //project #4    
-      Console.WriteLine("Enter the first number: ");
-        int firstnum=int.Parse(Console.ReadLine());
-        Console.WriteLine("Enter the secound number: ");
-        int secoundnum=int.Parse(Console.ReadLine());
-        
-        
-         int i;
-       for( i=Math.Min(firstnum,secoundnum);i<=Math.Max(firstnum,secoundnum);i++)
-         { 
-         	int sum=0;
-         	for(int j=1;j<i;j++)
-         	{
-         		if(i%j==0)
-         		{
-                  sum+=j;
-                  
-         		}
-         	}
-         	if(sum==i)
-         	{
-         		Console.WriteLine(i);
-         	}
-         }  
-        
-       }
+       }            
+         		
+         	
+      }
     }
 }
